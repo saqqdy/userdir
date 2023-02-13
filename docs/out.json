@@ -1,0 +1,90 @@
+{
+	"id": 0,
+	"name": "index.md - v1.0.0-alpha.1",
+	"kind": 1,
+	"kindString": "Project",
+	"flags": {},
+	"originalName": "index.md",
+	"children": [
+		{
+			"id": 4,
+			"name": "default",
+			"kind": 8388608,
+			"kindString": "Reference",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 7,
+					"character": 29,
+					"url": "https://github.com/saqqdy/userdir/blob/2cb8b4c/src/index.ts#L7"
+				}
+			],
+			"target": 1
+		},
+		{
+			"id": 1,
+			"name": "userdir",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 3,
+					"character": 9,
+					"url": "https://github.com/saqqdy/userdir/blob/2cb8b4c/src/index.ts#L3"
+				}
+			],
+			"signatures": [
+				{
+					"id": 2,
+					"name": "userdir",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 3,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 4,
+									"character": 8,
+									"url": "https://github.com/saqqdy/userdir/blob/2cb8b4c/src/index.ts#L4"
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "References",
+			"children": [
+				4
+			]
+		},
+		{
+			"title": "Functions",
+			"children": [
+				1
+			]
+		}
+	],
+	"sources": [
+		{
+			"fileName": "index.ts",
+			"line": 3,
+			"character": 0,
+			"url": "https://github.com/saqqdy/userdir/blob/2cb8b4c/src/index.ts#L3"
+		}
+	]
+}
