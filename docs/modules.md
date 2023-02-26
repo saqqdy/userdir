@@ -1,6 +1,6 @@
-[index.md - v1.0.0-alpha.1](README.md) / Exports
+[index.md - v1.0.0-beta.1](README.md) / Exports
 
-# index.md - v1.0.0-alpha.1
+# index.md - v1.0.0-beta.1
 
 ## Table of contents
 
@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[index.ts:3](https://github.com/saqqdy/userdir/blob/c2454ff/src/index.ts#L3)
+[index.ts:3](https://github.com/saqqdy/userdir/blob/58b65c2/src/index.ts#L3)
 
 ---
 
@@ -35,4 +35,4 @@
 
 #### Defined in
 
-[index.ts:3](https://github.com/saqqdy/userdir/blob/c2454ff/src/index.ts#L3)
+[index.ts:3](https://github.com/saqqdy/userdir/blob/58b65c2/src/index.ts#L3)
