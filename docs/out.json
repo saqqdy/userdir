@@ -7,20 +7,41 @@
 	"originalName": "index.md",
 	"children": [
 		{
-			"id": 4,
+			"id": 3,
 			"name": "default",
-			"kind": 8388608,
-			"kindString": "Reference",
+			"kind": 64,
+			"kindString": "Function",
 			"flags": {},
 			"sources": [
 				{
 					"fileName": "index.ts",
-					"line": 7,
-					"character": 29,
-					"url": "https://github.com/saqqdy/userdir/blob/2cb8b4c/src/index.ts#L7"
+					"line": 22,
+					"character": 0,
+					"url": "https://github.com/saqqdy/userdir/blob/c2454ff/src/index.ts#L22"
 				}
 			],
-			"target": 1
+			"signatures": [
+				{
+					"id": 4,
+					"name": "default",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "literal",
+								"value": null
+							}
+						]
+					}
+				}
+			]
 		},
 		{
 			"id": 1,
@@ -32,8 +53,8 @@
 				{
 					"fileName": "index.ts",
 					"line": 3,
-					"character": 9,
-					"url": "https://github.com/saqqdy/userdir/blob/2cb8b4c/src/index.ts#L3"
+					"character": 16,
+					"url": "https://github.com/saqqdy/userdir/blob/c2454ff/src/index.ts#L3"
 				}
 			],
 			"signatures": [
@@ -44,22 +65,17 @@
 					"kindString": "Call signature",
 					"flags": {},
 					"type": {
-						"type": "reflection",
-						"declaration": {
-							"id": 3,
-							"name": "__type",
-							"kind": 65536,
-							"kindString": "Type literal",
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "index.ts",
-									"line": 4,
-									"character": 8,
-									"url": "https://github.com/saqqdy/userdir/blob/2cb8b4c/src/index.ts#L4"
-								}
-							]
-						}
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "literal",
+								"value": null
+							}
+						]
 					}
 				}
 			]
@@ -67,14 +83,9 @@
 	],
 	"groups": [
 		{
-			"title": "References",
-			"children": [
-				4
-			]
-		},
-		{
 			"title": "Functions",
 			"children": [
+				3,
 				1
 			]
 		}
@@ -82,9 +93,9 @@
 	"sources": [
 		{
 			"fileName": "index.ts",
-			"line": 3,
+			"line": 1,
 			"character": 0,
-			"url": "https://github.com/saqqdy/userdir/blob/2cb8b4c/src/index.ts#L3"
+			"url": "https://github.com/saqqdy/userdir/blob/c2454ff/src/index.ts#L1"
 		}
 	]
 }

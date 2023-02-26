@@ -4,30 +4,35 @@
 
 ## Table of contents
 
-### References
-
-- [default](modules.md#default)
-
 ### Functions
 
+- [default](modules.md#default)
 - [userdir](modules.md#userdir)
-
-## References
-
-### default
-
-Renames and re-exports [userdir](modules.md#userdir)
 
 ## Functions
 
-### userdir
+### default
 
-▸ **userdir**(): `Object`
+▸ **default**(): `string` \| `null`
 
 #### Returns
 
-`Object`
+`string` \| `null`
 
 #### Defined in
 
-[index.ts:3](https://github.com/saqqdy/userdir/blob/2cb8b4c/src/index.ts#L3)
+[index.ts:3](https://github.com/saqqdy/userdir/blob/c2454ff/src/index.ts#L3)
+
+---
+
+### userdir
+
+▸ **userdir**(): `string` \| `null`
+
+#### Returns
+
+`string` \| `null`
+
+#### Defined in
+
+[index.ts:3](https://github.com/saqqdy/userdir/blob/c2454ff/src/index.ts#L3)
