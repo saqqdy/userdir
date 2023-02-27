@@ -1,4 +1,4 @@
-index.md - v1.0.0-beta.1 / [Exports](modules.md)
+index.md - v1.0.0 / [Exports](modules.md)
 
 <div style="text-align: center;" align="center">
 
@@ -36,6 +36,12 @@ $ yarn add userdir
 ```
 
 ## Usage
+
+```js
+import userdir from 'userdir'
+
+userdir() // /Users/saqqdy
+```
 
 ## Support & Issues
 

@@ -1,6 +1,6 @@
 {
 	"id": 0,
-	"name": "index.md - v1.0.0-beta.1",
+	"name": "index.md - v1.0.0",
 	"kind": 1,
 	"kindString": "Project",
 	"flags": {},
@@ -15,9 +15,9 @@
 			"sources": [
 				{
 					"fileName": "index.ts",
-					"line": 22,
+					"line": 27,
 					"character": 0,
-					"url": "https://github.com/saqqdy/userdir/blob/58b65c2/src/index.ts#L22"
+					"url": "https://github.com/saqqdy/userdir/blob/b74de61/src/index.ts#L27"
 				}
 			],
 			"signatures": [
@@ -27,6 +27,25 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Get the user home directory"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "- home directory"
+									}
+								]
+							}
+						]
+					},
 					"type": {
 						"type": "union",
 						"types": [
@@ -52,9 +71,9 @@
 			"sources": [
 				{
 					"fileName": "index.ts",
-					"line": 3,
+					"line": 8,
 					"character": 16,
-					"url": "https://github.com/saqqdy/userdir/blob/58b65c2/src/index.ts#L3"
+					"url": "https://github.com/saqqdy/userdir/blob/b74de61/src/index.ts#L8"
 				}
 			],
 			"signatures": [
@@ -64,6 +83,25 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Get the user home directory"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "- home directory"
+									}
+								]
+							}
+						]
+					},
 					"type": {
 						"type": "union",
 						"types": [
@@ -95,7 +133,7 @@
 			"fileName": "index.ts",
 			"line": 1,
 			"character": 0,
-			"url": "https://github.com/saqqdy/userdir/blob/58b65c2/src/index.ts#L1"
+			"url": "https://github.com/saqqdy/userdir/blob/b74de61/src/index.ts#L1"
 		}
 	]
 }

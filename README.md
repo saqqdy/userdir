@@ -35,6 +35,12 @@ $ yarn add userdir
 
 ## Usage
 
+```js
+import userdir from 'userdir'
+
+userdir() // /Users/saqqdy
+```
+
 ## Support & Issues
 
 Please open an issue [here](https://github.com/saqqdy/userdir/issues).

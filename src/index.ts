@@ -1,5 +1,10 @@
 import os from 'os'
 
+/**
+ * Get the user home directory
+ *
+ * @returns - home directory
+ */
 export function userdir(): string | null {
 	const env = process.env
 	const home = env.HOME

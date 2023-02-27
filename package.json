@@ -1,17 +1,16 @@
 {
 	"name": "userdir",
 	"description": "A simple utility to get the cross-platform user home directory",
-	"version": "1.0.0-beta.1",
+	"version": "1.0.0",
 	"packageManager": "pnpm@7.26.1",
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.mjs",
-	"unpkg": "./dist/index.min.js",
-	"jsdelivr": "./dist/index.min.js",
 	"typings": "./dist/index.d.ts",
 	"exports": {
 		".": {
 			"require": "./dist/index.cjs",
-			"import": "./dist/index.mjs"
+			"import": "./dist/index.mjs",
+			"types": "./dist/index.d.ts"
 		},
 		"./*": "./*"
 	},
