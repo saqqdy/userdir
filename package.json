@@ -5,12 +5,12 @@
 	"packageManager": "pnpm@7.26.1",
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.mjs",
-	"typings": "./dist/index.d.ts",
+	"types": "./dist/index.d.ts",
 	"exports": {
 		".": {
+			"types": "./dist/index.d.ts",
 			"require": "./dist/index.cjs",
-			"import": "./dist/index.mjs",
-			"types": "./dist/index.d.ts"
+			"import": "./dist/index.mjs"
 		},
 		"./*": "./*"
 	},

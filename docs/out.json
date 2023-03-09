@@ -122,10 +122,7 @@
 	"groups": [
 		{
 			"title": "Functions",
-			"children": [
-				3,
-				1
-			]
+			"children": [3, 1]
 		}
 	],
 	"sources": [
