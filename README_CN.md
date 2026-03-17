@@ -2,7 +2,7 @@
 
 # userdir
 
-A simple utility to get the cross-platform user home directory
+一个简单的跨平台获取用户主目录的工具
 
 [![NPM version][npm-image]][npm-url]
 [![npm download][download-image]][download-url]
@@ -12,11 +12,11 @@ A simple utility to get the cross-platform user home directory
 
 <div style="text-align: center; margin-bottom: 20px;" align="center">
 
-### **[Change Log](./CHANGELOG.md)** · **[简体中文](./README_CN.md)**
+### **[更新日志](./CHANGELOG.md)** · **[English](./README.md)**
 
 </div>
 
-## Installing
+## 安装
 
 ```bash
 # use pnpm
@@ -29,13 +29,13 @@ $ npm install userdir
 $ yarn add userdir
 ```
 
-## Requirements
+## 环境要求
 
 - Node.js >= 18
 
-## Usage
+## 使用
 
-### Basic Usage
+### 基本用法
 
 ```js
 import userdir from 'userdir'
@@ -43,33 +43,33 @@ import userdir from 'userdir'
 userdir() // /Users/username
 ```
 
-### With Options
+### 使用选项
 
 ```js
 import { userdir, userdirAsync, clearCache } from 'userdir'
 
-// With path validation
-userdir({ validate: true }) // Returns null if path doesn't exist
+// 路径验证
+userdir({ validate: true }) // 路径不存在则返回 null
 
-// Without cache
+// 禁用缓存
 userdir({ cache: false })
 
-// Async version
+// 异步版本
 await userdirAsync()
 
-// Clear cache
+// 清除缓存
 clearCache()
 ```
 
-### Options
+### 选项
 
 ```typescript
 interface UserdirOptions {
-  /** Whether to use cache (default: true) */
+  /** 是否使用缓存（默认：true） */
   cache?: boolean
-  /** Custom environment variables (for testing) */
+  /** 自定义环境变量（用于测试） */
   env?: typeof process.env
-  /** Validate if directory exists (default: false) */
+  /** 验证目录是否存在（默认：false） */
   validate?: boolean
 }
 ```
@@ -78,77 +78,77 @@ interface UserdirOptions {
 
 ### `userdir(options?)`
 
-Get the user home directory synchronously.
+同步获取用户主目录。
 
-- **Returns**: `string | null` - User home directory path, or null if not found
+- **返回值**: `string | null` - 用户主目录路径，未找到则返回 null
 
 ### `userdirAsync(options?)`
 
-Get the user home directory asynchronously.
+异步获取用户主目录。
 
-- **Returns**: `Promise<string | null>`
+- **返回值**: `Promise<string | null>`
 
 ### `clearCache()`
 
-Clear the internal cache.
+清除内部缓存。
 
-### Default Export
+### 默认导出
 
-The default export uses `os.homedir()` when available, falls back to `userdir()`.
+默认导出优先使用 `os.homedir()`，不可用时回退到 `userdir()`。
 
-## Migration from v1.0 to v1.1
+## 从 v1.0 迁移到 v1.1
 
-### Node.js Version
+### Node.js 版本
 
-v1.1 requires Node.js >= 18. If you need to support older versions, stay on v1.0.
+v1.1 需要 Node.js >= 18。如需支持旧版本，请使用 v1.0。
 
-### Import Changes
+### 导入变化
 
-The default export behavior remains the same. Named exports are now available:
+默认导出行为不变。新增命名导出：
 
 ```js
 // v1.0
 import userdir from 'userdir'
 
-// v1.1 - Same as before
+// v1.1 - 和之前一样
 import userdir from 'userdir'
 
-// v1.1 - New named exports
+// v1.1 - 新的命名导出
 import { userdir, userdirAsync, clearCache } from 'userdir'
 ```
 
-### New Features
+### 新功能
 
 ```js
-// Path validation (returns null if path doesn't exist)
+// 路径验证（路径不存在返回 null）
 userdir({ validate: true })
 
-// Disable cache
+// 禁用缓存
 userdir({ cache: false })
 
-// Async API
+// 异步 API
 await userdirAsync()
 
-// Clear cache manually
+// 手动清除缓存
 clearCache()
 ```
 
-### Removed Dependencies
+### 移除的依赖
 
-v1.1 no longer depends on `core-js` or `js-cool`. If your project relied on these being installed transitively, install them directly.
+v1.1 不再依赖 `core-js` 或 `js-cool`。如果你的项目依赖这些包，请直接安装。
 
-### Build Output
+### 构建输出
 
 | v1.0 | v1.1 |
 |------|------|
 | `dist/index.mjs` | `dist/index.js` |
 | `dist/index.cjs` | `dist/index.cjs` |
 
-## Support & Issues
+## 支持与问题
 
-Please open an issue [here](https://github.com/saqqdy/userdir/issues).
+请在[这里](https://github.com/saqqdy/userdir/issues)提交问题。
 
-## License
+## 许可证
 
 [MIT](LICENSE)
 

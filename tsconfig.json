@@ -1,32 +1,21 @@
 {
 	"compilerOptions": {
-		"allowJs": true,
-		"strict": true,
-		"module": "EsNext",
-		"noImplicitAny": true,
-		"removeComments": true,
+		"target": "ES2020",
+		"module": "ESNext",
 		"moduleResolution": "Node",
-		"noImplicitOverride": true,
-		"noUnusedLocals": true,
-		"esModuleInterop": true,
-		"jsx": "react",
-		"jsxFactory": "h",
-		"jsxFragmentFactory": "Fragment",
-		"noLib": false,
-		"target": "ESNext",
-		"sourceMap": true,
-		"lib": ["ESNext", "DOM", "DOM.Iterable"],
-		"allowSyntheticDefaultImports": true,
-		"experimentalDecorators": true,
-		"forceConsistentCasingInFileNames": true,
 		"resolveJsonModule": true,
-		"skipLibCheck": true,
-		"downlevelIteration": true,
-		"baseUrl": ".",
-		"paths": {
-			"#lib/*": ["./src/*"],
-			"@/package": ["./package.json"]
-		}
+		"strict": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"declaration": true,
+		"declarationMap": true,
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true
 	},
-	"exclude": ["**/__tests__", "temp"]
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist", "**/__tests__"]
 }

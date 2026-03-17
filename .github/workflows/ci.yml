@@ -1,15 +1,14 @@
-name: Publish
+name: CI
 
 on:
-  release:
-    types: [created]
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
 
 jobs:
-  publish:
+  ci:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      id-token: write
 
     steps:
       - name: Checkout
@@ -22,16 +21,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          registry-url: https://registry.npmjs.org
           cache: pnpm
 
       - name: Install dependencies
         run: pnpm install
 
+      - name: Lint
+        run: pnpm lint
+
+      - name: TypeCheck
+        run: pnpm typecheck
+
       - name: Build
         run: pnpm build
 
-      - name: Publish
-        run: pnpm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Test
+        run: pnpm test
